@@ -1,0 +1,11 @@
+Translation Practice Handbook
+Section: Files and confidentiality
+Source: practice_handbook.pdf, page 2
+
+Client files are stored only in the approved project folder for that job. Files are not copied to personal USB drives or public cloud links.
+
+Customer names, account numbers, and draft translations are confidential. They must not be shared in email threads with people who are not on the job.
+
+When a job is complete, working copies are kept for 90 days in case the client asks for a revision. After 90 days, extra copies are deleted from local folders.
+
+If a file looks like it contains payment cards or passwords, stop and ask the client to send a redacted version.

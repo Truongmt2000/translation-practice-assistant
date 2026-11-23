@@ -1,0 +1,11 @@
+Translation Practice Handbook
+Section: Quality and delivery
+Source: practice_handbook.pdf, page 3
+
+Every delivery includes a spelling pass and a meaning pass. The spelling pass checks names, numbers, and dates against the source. The meaning pass checks that the tone matches the original (formal notice vs marketing).
+
+Deliveries are sent as the same file type the client sent, unless the client asked for a different format in the quote.
+
+If a source sentence is unclear, the translator adds a short translator note instead of guessing. Guessing is not allowed for prices, dates, or legal terms.
+
+Late delivery must be flagged as soon as the delay is known, not after the deadline has passed.

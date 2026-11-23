@@ -1,0 +1,11 @@
+Translation Practice Handbook
+Section: Billing and revisions
+Source: practice_handbook.pdf, page 4
+
+Invoices are issued after the client confirms receipt of the final files. The invoice lists job name, word count, rate, and any rush fee.
+
+One round of small revisions is included if the request arrives within 10 days and does not add new source text. New source text is a new job and needs a new quote.
+
+Unbilled work is tracked in the job log with the date, client name, and reason it was not invoiced yet. Unbilled work is reviewed every Friday.
+
+Payment terms are net 15 days unless the client contract says otherwise.
