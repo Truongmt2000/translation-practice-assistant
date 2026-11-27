@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f3ed">
+    <meta
+      name="description"
+      content="Practice practical English-to-Vietnamese translation with short drills and reference feedback."
+    >
+    <title>Translation Practice Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#practice">Skip to practice</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Translation Practice home">
+        <span class="brand-mark" aria-hidden="true">T<span>↗</span></span>
+        <span class="brand-name">lingua<span>lab</span></span>
+      </a>
+      <div class="header-meta">
+        <span class="language-pair"><span>EN</span><span class="pair-arrow" aria-hidden="true">→</span><span>VI</span></span>
+        <span class="header-divider" aria-hidden="true"></span>
+        <span class="saved-label"><span class="saved-dot" aria-hidden="true"></span> Progress saved on this device</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="eyebrow"><span class="eyebrow-line"></span> YOUR DAILY PRACTICE</div>
+        <h1 id="page-title">Words that <span>work.</span></h1>
+        <p>Build your English-to-Vietnamese skills, one real-world phrase at a time.</p>
+        <div class="intro-details">
+          <span class="detail-item"><span class="detail-icon" aria-hidden="true">✦</span> Practical translation</span>
+          <span class="detail-separator" aria-hidden="true">·</span>
+          <span class="detail-item">Reference answers, not robot grades</span>
+        </div>
+      </section>
+
+      <section class="practice-layout" id="practice" aria-label="Translation drills">
+        <aside class="progress-card" aria-label="Your practice progress">
+          <div class="card-heading">
+            <div>
+              <span class="section-kicker">YOUR JOURNEY</span>
+              <h2>Small steps,<br> real progress.</h2>
+            </div>
+            <span class="streak-icon" aria-hidden="true">✳</span>
+          </div>
+          <div class="progress-summary">
+            <span class="progress-count" id="progress-count">0<span> / 8</span></span>
+            <span class="progress-caption">phrases mastered</span>
+          </div>
+          <div
+            class="progress-track"
+            role="progressbar"
+            aria-label="Phrases mastered"
+            aria-valuemin="0"
+            aria-valuemax="8"
+            aria-valuenow="0"
+            id="progress-bar"
+          ><span id="progress-fill"></span></div>
+          <p class="progress-note" id="progress-note">Every phrase is a chance to get a little better.</p>
+          <div class="progress-footer">
+            <span class="footer-spark" aria-hidden="true">✦</span>
+            <span>Take your time. Good translation starts with good thinking.</span>
+          </div>
+          <button class="reset-button" id="reset-progress" type="button">Reset my progress</button>
+        </aside>
+
+        <section class="drill-card" aria-labelledby="drill-title">
+          <div class="drill-topline">
+            <div class="drill-meta">
+              <span class="drill-number" id="drill-number">DRILL 01 <span>/ 08</span></span>
+              <span class="category-pill" id="drill-category">INTAKE &amp; QUOTING</span>
+            </div>
+            <div class="drill-navigation">
+              <button class="icon-button" id="previous-drill" type="button" aria-label="Previous drill" title="Previous drill">
+                <span aria-hidden="true">←</span>
+              </button>
+              <button class="icon-button" id="next-drill" type="button" aria-label="Next drill" title="Next drill">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="prompt-block">
+            <span class="prompt-label"><span class="sound-icon" aria-hidden="true">◖</span> TRANSLATE THIS</span>
+            <h2 class="source-sentence" id="drill-title" lang="en"></h2>
+            <p class="context" id="drill-context"></p>
+          </div>
+
+          <form id="translation-form">
+            <label class="answer-label" for="translation-input">
+              <span>Your Vietnamese translation</span>
+              <span class="character-hint">Take your time</span>
+            </label>
+            <textarea
+              id="translation-input"
+              name="translation"
+              rows="4"
+              lang="vi"
+              placeholder="Type your translation here..."
+              autocomplete="off"
+              required
+            ></textarea>
+            <div class="form-footer">
+              <p class="privacy-note"><span aria-hidden="true">↳</span> Your answer stays in this browser.</p>
+              <button class="primary-button" type="submit">
+                <span>Check my translation</span><span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </form>
+
+          <section class="feedback-panel" id="feedback-panel" aria-live="polite" hidden>
+            <div class="feedback-heading">
+              <span class="feedback-icon" aria-hidden="true">✦</span>
+              <div>
+                <span class="section-kicker">A REFERENCE TO LEARN FROM</span>
+                <h3>How might you say it?</h3>
+              </div>
+            </div>
+            <p class="reference-translation" id="reference-translation" lang="vi"></p>
+            <p class="feedback-tip" id="feedback-tip"></p>
+            <div class="self-rating">
+              <span class="rating-prompt">How did your version feel?</span>
+              <div class="rating-actions">
+                <button class="rating-button got-it" id="got-it" type="button"><span aria-hidden="true">✓</span> I got it</button>
+                <button class="rating-button try-again" id="try-again" type="button"><span aria-hidden="true">↻</span> Practice again</button>
+              </div>
+            </div>
+          </section>
+
+          <div class="drill-bottom">
+            <span><span class="bottom-spark" aria-hidden="true">✳</span> Made for thoughtful practice</span>
+            <span id="mastered-status"></span>
+          </div>
+        </section>
+      </section>
+      <p class="app-notice" id="app-notice" role="status" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer">
+      <span>LINGUALAB <span class="footer-dot">·</span> A LITTLE PRACTICE GOES A LONG WAY</span>
+      <span>Thoughtful translations, one phrase at a time.</span>
+    </footer>
+  </body>
+</html>
